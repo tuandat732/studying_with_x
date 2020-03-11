@@ -1,0 +1,31 @@
+/* body{
+    padding: 2rem
+} */
+.titt{
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 36px #dee2e5;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem
+}
+
+.content{
+    margin: 2rem;
+
+}
+.knc-sapo{
+    margin-bottom: 4rem;
+    font-size: 2rem
+}
+.knc-content p{
+    margin-top: 1rem
+}
+@media(max-width:1000px){
+    .titt{
+        width: 95%;
+        padding: 1rem
+    }
+}

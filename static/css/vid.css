@@ -1,0 +1,150 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+#head{
+    height: 27%;
+    background-color:#343a40;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+#head .login{
+    margin-top: 40%
+}
+#nav{
+    background-color: rgba(236, 100, 75, 1);
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+}
+#nav ul{
+    list-style-type: none;
+    background-color: rgba(236, 100, 75, 1);
+    text-align: center;
+
+}
+#nav ul .item{
+    color: aliceblue;
+    display: inline-table;
+    width: 10%;
+    height: 2rem;
+    line-height: 2rem;
+    position: relative;
+}
+#nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+#nav ul li a:hover{
+    background-color: white;
+    color: rgba(236, 100, 75, 1)
+}
+#nav ul li .sub-menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+#nav ul li:hover .sub-menu{
+    display: block;
+}
+#copyright{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    color: rgba(108, 122, 137, 1);
+    height: 20rem;
+}
+.lienket{
+    grid-row: 3
+}
+#copyright ul li{
+    list-style-type: none;
+}
+#copyright a{
+    text-decoration: none;
+    color:  rgba(108, 122, 137, 1)
+}
+#copyright ul{
+    padding-left: 10%;
+}
+.logoteam{
+    grid-column: 1/span 4;
+    padding-left: 2.7%;
+    padding-top: 3%;
+}
+.logout{
+    background-color: rgba(236, 100, 75, 1);
+    width: 55%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    color:white;
+    display: block;
+    margin-top: 3px;
+    font-size: 80%
+} */
+
+#body{
+    background-color: white;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem
+}
+.onetin {
+    text-align: center;
+    margin: 0 auto;
+}
+video{
+    margin-top: 2rem;
+    padding-bottom: 1.5em;
+    width: 70%;
+}
+.onetin ul {
+    text-align: center;
+    font-size: 20px;
+    flex-flow: column;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 600;
+}
+#bod h1{
+    color: red;
+    margin: 0 auto;
+    text-align: center;
+}
+#bod{
+    height: 40%;
+    padding-top: 4rem;
+}
+#bod div{
+    width: 8rem;
+    height: 2rem;
+    background-color: crimson;
+    color: white;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: block;
+    border-radius: 2rem;
+    text-align: center;
+    padding-top: 10px;
+}
+#bod a{
+    color: white;
+    text-decoration: none
+}
+#bod div:hover{
+    color: red;
+    border: 1px solid red;
+    background-color: white;
+}

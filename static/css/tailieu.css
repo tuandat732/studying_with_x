@@ -1,0 +1,93 @@
+.body{
+    padding: 3rem;
+    box-sizing: border-box;
+    background-color: rgb(242, 241, 239)
+    /* text-align: center */
+}
+.mon{
+    margin-bottom: 3rem
+}
+.mon > a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(236, 100, 75, 1);
+}
+.mon >a:hover{
+    text-decoration: underline
+}
+.wrapp{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    width: 370px;
+    max-height:300px ;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 36px #dee2e5;
+    display: flex;
+    flex-flow: column;
+    margin: 1rem
+}
+.linkk{
+    border-left: 2px solid red;
+    padding-left: 10px;
+    text-decoration: none;
+    color: black
+}
+.linkk:hover{
+    text-decoration: underline
+}
+.link img{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 5px;
+}
+.highlights .tieudemon:before {
+    content: " ";
+    display: block;
+    float: left;
+    position: absolute;
+    left: 0;
+    height: 18px;
+    border-left: 3px solid #e54e53;
+}
+.bangcacmon{
+    flex: 1 0 20%;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    box-shadow: 0 0 36px #dee2e5;
+    margin-top: 3.8rem;
+    padding: 2rem;
+    text-align: center
+}
+@media(min-width:450px){
+    .bangcacmon{
+        max-width: 50%;
+    }
+}
+.bodyy{
+    display: flex;
+    flex-wrap: wrap
+}
+.monmax{
+    width:70% 
+}
+.bangcacmon a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px
+}
+.bangcacmon a:hover{
+    text-decoration: underline
+}
+@media(max-width:1000px){
+    .monmax{
+        width: 100%
+    }
+    .wrapp{
+        width: 100%
+    }
+}

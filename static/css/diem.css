@@ -1,0 +1,90 @@
+.body{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.row1{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 2rem
+}
+.diemuser{
+    text-align: center;
+    background-color: rgba(236, 100, 75, 1);
+    width: 6rem;
+    height: 6rem;
+    color: white;
+    font-size: 3rem;
+    padding: 1rem
+}
+.bangchon{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    width: 80%
+}
+.bangchon > div{
+    text-align: center;
+    padding: 7px;
+    width: 70%;
+    border-radius: 10%;
+}
+.sai{
+    background-color: #ffd2d2;
+    color: #d04437
+}
+.dung{
+    background-color: #d9edfe;
+    color: #2392ec
+}
+.chualam{
+    background-color: #f0f0f0;
+    color: #aaa
+}
+.user>div{
+    margin-bottom: 2rem
+}
+/* .row1>div{
+    padding-right: 2rem
+} */
+.score{
+    border: 2px solid rgba(236, 100, 75, 1);
+    float: right;
+    border-radius: 2px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 3rem
+}
+.userscore{
+    padding-top: 1rem
+}
+.headd{
+    display: flex;
+    flex-wrap: wrap;
+}
+.headd >div{
+    margin: 1rem
+}
+.bang_xep_hang{
+    overflow: scroll;
+    height: 400px;
+    padding: 2rem
+    /* margin-left: 2rem */
+}
+/* @media(max-width:1000px){
+    .bangchon div{
+        width: 50%
+    }
+}
+@media(max-width:200px){
+    .baithi{
+        font-size:2rem
+    }
+}
+.khung{
+    width:90%
+} */

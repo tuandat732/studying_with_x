@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/tuvan.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Tư vấn</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <div id="head">
+        <div><img class="img" src="../static/logo/logow.png" alt=""></div>
+        <div class="login">
+            {% if login == True%}
+            <span style="font-size:80%">User : {{user}}</span>
+            <span><a class="logout" href="/sign-out">Đăng xuất</a></span>
+            {%endif%}
+        </div>
+
+    </div>
+    <div id="nav">
+        <ul>
+            <li class="item"><a href="/tin-tuc/tintuc2">Tin tức</a>
+                <ul class="sub-menu">
+                    <li><a href="/tin-tuc/tintuc2">Học đường</a></li>
+                    <li><a href="/tin-tuc/tuyensinh">Tuyển sinh</a></li>
+                    <li><a href="/tin-tuc/duhoc">Du học</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="/tailieu">Tài liệu</a>
+                <ul class="sub-menu">
+                    <li><a href="/tailieu/toan">Toán</a></li>
+                    <li><a href="/tailieu/li">Lí</a></li>
+                    <li><a href="/tailieu/hoa">Hóa</a></li>
+                    <li><a href="/tailieu/sinh">Sinh</a></li>
+                    <li><a href="/tailieu/anh">Anh</a></li>
+                    <li><a href="/tailieu/van">Văn</a></li>
+                </ul>
+            </li>
+            <li class='item'><a href="/luyende">Luyện thi</a>
+                <ul class="sub-menu">
+                    <li><a href="/luyende/toan">Toán</a></li>
+                    <li><a href="/luyende/li">Lí</a></li>
+                    <li><a href="/luyende/hoa">Hóa</a></li>
+                    <li><a href="/luyende/sinh">Sinh</a></li>
+                    <li><a href="/luyende/anh">Anh</a></li>
+                </ul>
+            </li>
+            <li class="item" id="active"><a href="/tuvan">Tư vấn</a>
+                <ul class="sub-menu">
+                        <li><a href="/tuvan">Tư vấn</a></li>
+                        <li><a href="/tracnghiemtc">Trắc nghiệm TC</a></li>
+                    </ul></li>
+            <li class="item"><a href="/giaitri">Giải trí</a></li>
+            <li class="item"><a href="/profile/{{id_login}}">Cá nhân</a></li>
+        </ul>
+    </div>
+
+    <div id="body">
+        <div class="khungchon">
+            <form action="" method="POST">
+                <h2>Các tiêu chí</h2>
+                <div class='vol'>
+                    <p>Chọn ngành học</p>
+                    <select name="subject" id="subject1">
+                        <option value="Chọn">Chọn</option>
+                        <option value="Công nghệ thông tin">Công Nghệ Thông Tin</option>
+                        <option value="Quản trị kinh doanh">Quản Trị Kinh Doanh</option>
+                        <option value="Kế toán">Kế Toán</option>
+                        <option value="Khoa học máy tính">Khoa Học Máy Tính</option>
+                        <option value="Luật">Luật</option>
+                        <option value="Quản trị khách sạn">Quản Trị Khách Sạn</option>
+                        <option value="Ngôn ngữ Anh">Ngôn Ngữ Anh</option>
+                        <option value="Thiết kế thời trang">Thiết Kế Thời Trang</option>
+                        <option value="Tài chính - Ngân hàng">Tài chính - Ngân hàng</option>
+                        <option value="An toàn thông tin">An toàn thông tin</option>
+                        <option value="Thương mại điện tử">Thương mại điện tử</option>
+                        <option value="Kinh tế">Kinh Tế</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Thiết kế đồ họa">Thiết kế đồ hoa</option>
+                        <option value="Kỹ thuật xây dựng">Kỹ thuật xây dựng</option>
+
+                    </select>
+                </div>
+                <div class="vol">
+                    <p>Chọn trường học</p>
+                    <select name="school" id="school1">
+                        <option value="Chọn">Chọn</option>
+                        <option value="Đại học Công nghiệp Hà Nội">Đại học Công nghiệp Hà Nội </option>
+                        <option value="Đại Học Kiến Trúc Hà Nội">Đại Học Kiến Trúc Hà Nội</option>
+                        <option value="Đại Học Bách Khoa Hà Nội">Đại Học Bách Khoa Hà Nội </option>
+
+                        <option value="Đại Học Sư Phạm">Đại Học Sư Phạm Hà Nội </option>
+                        <option value="Đại Học Xây Dựng Hà Nội">Đại Học Xây Dựng</option>
+                        <option value="Đại Học Y Hà Nội">Đại Học Y Hà Nội </option>
+                        <option value="Đại Học Kinh Tế Quốc Dân">Đại Học Kinh Tế Quốc Dân </option>
+                        <option value="Học Viện Ngân Hàng">Học viện Ngân Hàng </option>
+                        <option value="Học Viện Ngoại Giao"> Học Viện Ngoại Giao</option>
+
+                        <option value="Học Viện Tài Chính">Học Viện Tài Chính </option>
+                        <option value="Học Viện Công Nghệ Bưu Chính Viễn Thông ( Phía Bắc )">Học Viện Công Nghệ Bưu
+                            Chính Viễn Thông ( Phía Bắc ) </option>
+                        <option value="Đại học Điện Lực">Đại Học Điện Lực </option>
+                        <option value="Đại học Thăng Long">Đại Học Thăng Long </option>
+
+                        <option value="Đại Học FPT">Đại Học FPT </option>
+                        <option value="Đại Học Mỏ Địa Chất">Đại Học Mỏ Địa Chất </option>
+                        <option value="Đại Học Thủy Lợi">Đại Học Thủy Lợi </option>
+                    </select>
+                </div>
+                <div class="vol">
+                    <p>Nhập các điểm thi thử của bạn</p>
+                    <input class="mark" name="mark" type="input" placeholder="Điểm các lần thi thử">
+                    {% if checkdiem =='sai'%}
+                    <p style="color:red">Bạn cố tình nhập sai đúng không</p>
+                    {%endif%}
+                </div>
+                <div class="chuy">
+                    <b>Chú ý:</b>
+                    <p>Các điểm cách nhau bởi dấu cách</p>
+                    <p>Các tiêu chí có thể có hoặc không</p>
+                </div>
+
+                <!-- <button >Tìm Kiếm</button><br> -->
+                <button>Tìm Kiếm</button><br>
+            </form>
+        </div>
+        <div class="truongdo1">
+            <div class="truongdo">
+
+                {% if checkdiem == 'True' %}
+                <div class="cotx2">
+                    <div class="cot1">
+                        <h2>Danh sách các trường phù hợp với điểm bạn hiện tại</h2> <br>
+                        {% for i in ds_do %}
+                        <div class="truong1 scroll">
+                            <h3>Tên trường: {{i.school}}</h3>
+                            <div>Ngành: {{i.subject}} <br>
+                                Mã ngành: {{i.sjcode}} <br>
+                                Khối: {{i.block}} <br>
+                                Điểm TB: {{i.mark}}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- <br> -->
+                    <div class="cot1">
+                        <h2>Danh sách các trường bạn có thể đỗ nếu cố gắng </h2> <br>
+                        {% for i in ds_cothedo %}
+                        <div class="truong1 scroll">
+                            <h3>Tên trường: {{i.school}}</h3>
+                            <div>Ngành: {{i.subject}} <br>
+                                Mã ngành: {{i.sjcode}} <br>
+                                Khối: {{i.block}} <br>
+                                Điểm TB: {{i.mark}}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {%elif checkdiem=='False'%}
+                    <h1>Không có dữ liệu nào phù hợp</h1>
+                    {%endif%}
+                </div>
+
+                {% if checkload == 'True' %}
+                <h1>Danh sách các trường theo yêu cầu bạn tìm kiếm</h1> <br>
+                {% for i in ds %}
+                <div class="truong scroll">
+                    <h3>Tên trường: {{i.school}}</h3>
+                    <div>Ngành: {{i.subject}} <br>
+                        Mã ngành: {{i.sjcode}} <br>
+                        Khối: {{i.block}} <br>
+                        Điểm: {{i.mark}}</div>
+                </div>
+                {% endfor %}
+                {%elif checkload=='False'%}
+                <h1>Không có dữ liệu nào phù hợp</h1>
+                {%endif%}
+            </div>
+        </div>
+        <hr>
+        <div id="copyright">
+            <div class="logoteam"><img src="../static/logo/logo2.png" alt=""></div>
+            <ul class="thongtin">
+                <li>
+                    <h3>Thông tin team</h3>
+                </li>
+                <li><a href="/info">Về Xteam</a></li>
+                <li><a href="/lienhe">Liên hệ</a></li>
+            </ul>
+            <ul class="linhvuc">
+                <li>
+                    <h3>lĩnh vực</h3>
+                </li>
+                <li><a href="/tailieu/toan">Toán</a></li>
+                <li><a href="/tailieu/li">Lí</a></li>
+                <li><a href="/tailieu/hoa">Hóa</a></li>
+                <li><a href="/tailieu/sinh">Sinh</a></li>
+                <li><a href="/tailieu/anh">Anh</a></li>
+            </ul>
+            <ul class="congdong">
+                <li>
+                    <h3>Cộng đồng</h3>
+                </li>
+                <li><a href="">Hỏi đáp</a></li>
+                <li><a href="">Tài liệu</a></li>
+                <li><a href="">Chiến dịch</a></li> <br>
+                <li>
+                    <h3>Liên kết</h3>
+                </li>
+                <li><a href="https://mindx.edu.vn/">mindX</a></li>
+            </ul>
+            <ul class="ketnoi">
+                <li>
+                    <h3>kết nối với team</h3>
+                </li>
+                <li>Kết nối với Xcoder qua mạng xã hội</li>
+                <li><a href="">facebook</a></li>
+                <li><a href="">youtube</a></li>
+            </ul>
+            <p style="margin-left:10%">Xcoder <i class="far fa-copyright"></i> 2019 </p>
+        </div>
+
+        <!-- <script>
+        $(".mark").on("change", () => {
+            $(".link").attr("href", `/tuvan/ketqua/${$(".mark").val()}`)
+        })
+    </script> -->
+        <script>
+            (function (s, u, b, i, z) {
+                u[i] = u[i] || function () {
+                    u[i].t = +new Date();
+                    (u[i].q = u[i].q || []).push(arguments);
+                };
+                z = s.createElement('script');
+                var zz = s.getElementsByTagName('script')[0];
+                z.async = 1; z.src = b; z.id = 'subiz-script';
+                zz.parentNode.insertBefore(z, zz);
+            })(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+            subiz('setAccount', 'acqiizmhhzvgsyhxradx');
+        </script>
+        <script>
+            ScrollReveal().reveal('.scroll', { delay:100 });
+        </script>
+</body>
+
+</html>

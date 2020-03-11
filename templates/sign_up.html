@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../static/css/sign_up.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title> Fighting</title>
+</head>
+
+<body>
+
+
+    <form method="POST">
+        <img class="img_signup" src="../static/sign_up.1.jpg" >
+        <div class="signupbox">
+            <div class="signupbox_con">
+                <p id='dangki' class="avatar"><b id = 'ten_dang_ki'>ĐĂNG KÝ</b></p>
+
+                <div>
+                    <div class="input">
+                        <span>Tên của mày</span>
+                        <input type="text" autofocus placeholder="Họ và Tên" name="fullname" class="o_input">
+                    </div>
+                    <div class="input">
+                        <span>Tên đăng nhập</span>
+                        <input type="text" autofocus placeholder="Tên đăng nhập" name="username" class="o_input">
+                        {% if check_username == False %}
+                        <small style="font-size: 13px;color:red">Tên đăng nhập đã được đăng kí . Vui lòng nhập tên
+                            khác</small>
+                        {% endif %}
+                    </div>
+                    <div class="input">
+                        <span>Email </span>
+                        <input type="email" autofocus placeholder="Địa chỉ email" name="email" class="o_input">
+                    </div>
+                    <div class="input">
+                        <span>Mật khẩu</span>
+                        <input type="password" autofocus placeholder="Mật khẩu" name="password" class="o_input">
+                        {% if check_full_password == False %}
+                        <small style="font-size: 13px ; color : red">( ! Sử dụng ít nhất 8 ký tự )</small>
+                        {% else %}
+                        <small style="font-size: 13px">(Sử dụng ít nhất 8 ký tự )</small>
+                        {% endif %}
+                        <small style="font-size: 13px">Lưu ý : Không nên đặt trùng thông tin cá nhân</small>
+                    </div>
+                    <div class="input">
+                        <span>Nhập lại mật khẩu</span>
+                        <input type="password" autofocus placeholder="Nhập lại mật khẩu" name="confirm" class="o_input">
+                        {% if check_confirm == False %}
+                        <small style="font-size: 13px ; color: red">Mật khẩu xác nhận không trùng khớp</small>
+                        {% endif %}
+                    </div>
+                    <div class="input">
+                        <span>Ngày sinh</span>
+                        <input type="date" placeholder="dob" name='birthday'>
+                    </div>
+                    <div class="input">
+                        <span>Trường cấp 3 theo học</span>
+                        <input autofocus placeholder="school" type="text" name='school'>
+                    </div>
+                    <div class="input">
+                        <span>Khối học</span>
+                        <select aria-placeholder="gr" name="gradeofuser">
+                            <option value="grade10">Lớp 10</option>
+                            <option value="grade11">Lớp 11</option>
+                            <option value="grade12">Lớp 12</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <span>Giới tính</span>
+                        <select aria-placeholder="gd" name="gender">
+                            <option value="male">Nam</option>
+                            <option value="female">Nữ</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <span>Điện thoại</span>
+                        <input placeholder="tp" autofocus type="tel" name="telephone">
+                    </div>
+                    <div id='button' class="input">
+
+                        <button class="button">Tiếp tục</button><br>
+                        {% if check_full == False %}
+                        <b style="color:red"> VUI LÒNG NHẬP ĐẦY ĐỦ THÔNG TIN</b>
+                        {% endif %}
+                        <!-- <br> -->
+
+                        <small style="font-size: 13px;">Đã có tài khoản?<a href="/sign-in"><b>Đăng nhập</b></a></small>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <img class="img_signup" src="../static/sign_up.2.jpg" >
+    </form>
+
+
+
+    
+
+</body>
+
+</html>

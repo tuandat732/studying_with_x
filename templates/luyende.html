@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/luyende.css">
+    <title>Luyện đề</title>
+</head>
+<body style="background-color: white">
+    <div id="head">
+        <div><img class="img" src="../static/logo/logow.png" alt=""></div>
+        <div class="login">
+            {% if login == True%}
+            <span style="font-size:80%">User : {{user}}</span>
+            <span><a class="logout" href="/sign-out">Đăng xuất</a></span>
+            {%endif%}
+        </div>
+        
+    </div>
+    <div id="nav">
+        <ul>
+            <li class="item"><a href="/tin-tuc/tintuc2">Tin tức</a>
+                <ul class="sub-menu">
+                    <li><a href="/tin-tuc/tintuc2">Học đường</a></li>
+                    <li><a href="/tin-tuc/tuyensinh">Tuyển sinh</a></li>
+                    <li><a href="/tin-tuc/duhoc">Du học</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="/tailieu">Tài liệu</a>
+                <ul class="sub-menu">
+                    <li><a href="/tailieu/toan">Toán</a></li>
+                    <li><a href="/tailieu/li">Lí</a></li>
+                    <li><a href="/tailieu/hoa">Hóa</a></li>
+                    <li><a href="/tailieu/sinh">Sinh</a></li>
+                    <li><a href="/tailieu/anh">Anh</a></li>
+                    <li><a href="/tailieu/van">Văn</a></li>
+                </ul> </li>
+            <li class='item' id="active"><a href="/luyende">Luyện thi</a>
+                <ul class="sub-menu">
+                    <li><a href="/luyende/toan">Toán</a></li>
+                    <li><a href="/luyende/li">Lí</a></li>
+                    <li><a href="/luyende/hoa">Hóa</a></li>
+                    <li><a href="/luyende/sinh">Sinh</a></li>
+                    <li><a href="/luyende/anh">Anh</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="/tuvan">Tư vấn</a>
+                <ul class="sub-menu">
+                        <li><a href="/tuvan">Tư vấn</a></li>
+                        <li><a href="/tracnghiemtc">Trắc nghiệm TC</a></li>
+                    </ul></li>
+            <li class="item"><a href="/giaitri">Giải trí</a></li>
+            <li class="item"><a href="/profile/{{id_login}}">Cá nhân</a></li>
+        </ul>
+    </div>
+
+    <div class="monhoc">
+    {% for mon in dict_mon %}
+       <div class="{{mon}}">
+            {%if mon != 'van' %}
+           <a href="/luyende/{{mon}}">{{dict_mon[mon]}}</a>
+           {%else%}
+           <a href="/luyende/{{mon}}">dcm t đã giấu r</a>
+           {%endif%}
+        </div>
+    
+    {% endfor %}
+    </div>
+    <br>
+    <hr>
+    <div id="copyright">
+            <div class="logoteam"><img src="../static/logo/logo2.png" alt=""></div>
+            <ul class="thongtin">
+                <li><h3>Thông tin team</h3></li>
+                <li><a href="/info">Về Xteam</a></li>
+                <li><a href="/lienhe">Liên hệ</a></li>
+            </ul>
+            <ul class="linhvuc">
+                <li><h3>lĩnh vực</h3></li>
+                <li><a href="/tailieu/toan">Toán</a></li>
+                <li><a href="/tailieu/li">Lí</a></li>
+                <li><a href="/tailieu/hoa">Hóa</a></li>
+                <li><a href="/tailieu/sinh">Sinh</a></li>
+                <li><a href="/tailieu/anh">Anh</a></li>
+            </ul>
+            <ul class="congdong">
+                <li><h3>Cộng đồng</h3></li>
+                <li><a href="">Hỏi đáp</a></li>
+                <li><a href="">Tài liệu</a></li>
+                <li><a href="">Chiến dịch</a></li> <br>
+                <li><h3>Liên kết</h3></li>
+                <li><a href="https://mindx.edu.vn/">mindX</a></li>
+            </ul>
+            <ul class="ketnoi">
+                <li><h3>kết nối với team</h3></li>
+                <li>Kết nối với Xcoder qua mạng xã hội</li>
+                <li><a href="">facebook</a></li>
+                <li><a href="">youtube</a></li>
+            </ul>
+            <p style="margin-left:10%">Xcoder <i class="far fa-copyright"></i> 2019 </p>
+        </div>
+</body>
+</html>

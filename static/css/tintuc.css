@@ -1,0 +1,75 @@
+#body{
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 36px #dee2e5;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem
+}
+@media(max-width:1000px){
+    #body{
+        width: 95%;
+        padding: 1rem;
+    }
+    .navphu{
+        width: 95%;
+    }
+}
+.onetin{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tit{
+    /* margin-left: 2rem; */
+    width: 40rem;
+    padding-left: 20px;
+    padding-right: 20px
+}
+.onetin a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem
+}
+.onetin span{
+    font-size: 1rem
+}
+.onetin img{
+    width: 95%;
+    margin-right: 3rem
+}
+.navphu{
+    background-color: white;
+    box-shadow: 0 0 36px #dee2e5;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;
+    /* height: 3.5rem; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center */
+}
+.navphu ul{
+    text-align: center;
+    list-style-type: none;
+}
+.navphu ul li{
+    display: inline-table
+}
+.navphu ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px;
+    font-weight: 600
+}
+.navphu ul li:hover{
+    border-bottom: 5px solid rgba(236, 100, 75, 1) ;
+}
+.navphu .active{
+    border-bottom: 5px solid rgba(236, 100, 75, 1) ;
+}
+

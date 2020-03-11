@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+
+.img_signup{
+    width: 30%;
+    height:30%;
+}
+
+body{
+    
+    background-color: rgba(236, 100, 75, 1);
+    padding: 3rem
+}
+
+html{
+    width: 99%;
+    height: 99%;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+
+span,small{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+input,select {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-left:10px;
+}
+input{
+    width: 88%;
+    font-size: 14px;
+    border: 1px solid gray;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+input:hover{
+    transition: 1s;
+    width: 95%;
+    font-size: 14px;
+    border: 1px solid gray;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+
+select{
+    width: 95%;
+}
+select:hover{
+    transition: 1s;
+    width: 98%;
+}
+
+
+.signupbox{
+    border-radius: 10px;
+    display: flex;
+    width: 27rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border : 1px solid rgba(0, 0, 0, 0.7);
+}
+
+#dangki{
+    display: flex;
+    justify-content: center;
+    margin-top:-10px;
+    font-size: 20px;
+    margin-bottom :10px;
+    
+}
+
+#ten_dang_ki{
+    background-color:rgba(236, 100, 75, 1);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 1rem;
+    border :1px solid black;
+}
+
+#button{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button{
+    border-radius: 0.5rem;
+    background-color: rgba(236, 100, 75, 1);
+    color: black;
+    width: 30%;
+    border:none;
+    height: 1.4rem
+}
+button:hover{
+    background-color :rgb(240, 70, 40);
+    color:white;
+    transition: 1s;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color:  rgb(0, 0, 0)
+}
+a:hover{
+    transition: 0s;
+    color: blue;
+}
+.img_signup{
+    width: 30%;
+}
+@media(max-width:600px){
+    .img_signup{
+        display: none;
+    }
+}

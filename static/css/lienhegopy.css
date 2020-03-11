@@ -1,0 +1,77 @@
+#body{
+    margin: 3rem;
+    /* display: grid;
+    grid-template-columns: 40% 40%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-column-gap: 30px; */
+    box-sizing: border-box;
+    /* height: 600px; */
+}
+.ed{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0
+}
+.ed div{
+    width: 44%
+}
+form div{
+    margin: 10px
+}
+form input{
+    width: 90%;
+    height: 1.4rem;
+    padding-left: 20px;
+    border-radius: 0.3rem;
+    border: 1px solid #ced4da
+}
+#gopy{
+    background-color: white;
+    border-radius: 1%;
+    height:28rem ;
+    display: block;
+    width: 26rem;
+    margin: 10px
+}
+
+#daude{
+    background-color: #ced4da;
+    height: 6%;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 1%;
+    font-size: 87%;
+    font-weight: 900
+}
+#daude{
+    font-weight: 500
+}
+#noidung{
+    padding: 1rem;
+}
+
+#noidung div{
+    margin-top: 10px
+}
+button{
+    background-color: #42a5f5;
+    width: 99%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 0.2rem
+}
+button:hover{
+    background-color: #0d89ed
+}
+label{
+    font-size: 15px;
+    font-weight: 500
+}
+#noidung span{
+    font-weight: 500
+}

@@ -1,0 +1,75 @@
+
+.monhoc{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem
+}
+.monhoc>div{
+    flex: 1 0 20%;
+    width: 100%;
+    height: 8.5rem;
+    border: none;
+    border-radius: 10px;
+    margin: 3rem;
+    display: block;
+}
+@media(min-width:1000px){
+    .monhoc>div{
+        max-width: 100%;
+    }
+}
+.toan{
+    background-color: rgba(107, 185, 240, 1);
+    box-shadow: 0 0 20px #dee2e5;
+}
+.toan:hover{
+    background-color: rgb(73, 173, 245);
+    box-shadow: 0 0 20px rgb(78, 153, 206);
+}
+
+.hoa{
+    background-color: rgba(254, 241, 96, 1);
+    box-shadow: 0 0 20px #dee2e5;
+}
+.hoa:hover{
+    background-color: rgb(253, 236, 49);
+    box-shadow: 0 0 20px rgba(254, 241, 96, 1);
+
+}
+.li{
+    background-color: rgba(246, 71, 71, 1);
+    box-shadow: 0 0 20px #dee2e5;
+}
+.li:hover{
+    background-color: rgb(250, 33, 33);
+    box-shadow: 0 0 20px rgba(246, 71, 71, 1);
+}
+.anh{
+    background-color: rgb(181, 134, 247);
+    box-shadow: 0 0 20px #dee2e5;
+}
+.anh:hover{
+    background-color: rgb(162, 111, 235);
+    box-shadow: 0 0 20px rgb(181, 134, 247);
+
+}
+.sinh{
+    background-color: rgb(108, 228, 212);
+    box-shadow: 0 0 20px #dee2e5;
+}
+.sinh:hover{
+    background-color: rgb(56, 231, 208);
+    box-shadow: 0 0 20px rgb(108, 228, 212);
+}
+.van{
+    position: relative;
+    z-index: -1;
+}
+.monhoc a{
+    color: white;
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1.5rem
+}

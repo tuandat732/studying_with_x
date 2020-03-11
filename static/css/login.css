@@ -1,0 +1,306 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+/*
+.intro{
+    flex: 1 0 40%;
+    width:100%;
+    background-color: rgba(236, 100, 75, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: aliceblue;
+}
+@media(min-width:10000px){
+    .intro{
+        max-width: 100%;
+    }
+}
+.body{
+    flex: 1 0 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media(min-width:20000px){
+    .body{
+        max-width: 100%;
+    }
+}
+img{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+#loginbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width:100%;
+    z-index: 0;
+}
+#loginbox form{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#loginbox .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:-80px;
+    padding-bottom:80px;
+    
+
+}   
+.icon{
+    padding:40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    padding:10px;
+}
+
+#input1{
+
+    border-top: 1px solid black;
+}
+#loginbox .input{
+    
+    width: 40%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding-bottom :10px;
+    padding-top:10px;
+    height: 40px;
+}
+
+input{
+    width: 100%;
+    border-radius: 1rem;
+   padding-left: 10px;
+  
+
+}
+
+#loginbox button{
+    height:50px ;
+    width:100px ;
+    background-color: rgba(236, 100, 75, 1);
+    border: 0;
+    border-radius: 0.5rem;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
+    position: relative;
+    top:1.8rem;
+} */
+
+
+#loginbox button:hover{
+    background-color: rgb(240, 51, 17);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+/* #loginbox div{
+    height: 10%;
+    display: flex;
+} */
+/* #loginbox .tl{
+    text-decoration: none;
+    background-color: rgba(236, 100, 75, 1);
+    display: block;
+    padding: 3px;
+    border-radius: 0.3rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 2.1rem;
+    height: 1.7rem
+} */
+
+
+h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 46px;
+}
+span{
+    font-size:20px;
+    font-weight: 100;
+}
+
+
+
+
+
+input[type="text"], input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    /* margin: 20px auto; */
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 12px 10px;
+    outline: none;
+    border-radius: 24px;
+    transition:0.25s;
+    width: 70%;
+    height: 24px;
+    border-radius: 1rem;
+    border: 2px solid gray;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input[type="text"]:focus,input[type="password"]:focus{
+    width: 90%;
+    border-color: rgba(236, 100, 75, 1);
+    
+}
+input[type="text"]:hover, input[type = "password"]:hover{
+    cursor: pointer;
+}
+
+
+.signup-button{
+    padding:20px;
+    margin-bottom:-30px;
+}
+.dk{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 1rem;
+  
+    
+}
+.dk:hover{
+    background: rgba(236, 100, 75, 1);
+    color:white;
+    transition: 0.6s;
+    border: 1px solid white;
+}
+
+.intro .content1{
+    font-size:48px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#loginbox{
+    min-width: 70%;
+    max-width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+.intro{
+    flex: 1 0 30%;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: aliceblue;
+    background-color: rgba(236, 100, 75, 1);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+
+}
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%
+}
+#loginbox button{
+    height:50px ;
+    width:100px ;
+    background-color: rgba(236, 100, 75, 1);
+    border: 0;
+    border-radius: 0.5rem;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0.2rem;
+    position: relative;
+    top:1.8rem;
+    z-index: 0
+} 
+form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center
+}
+.content{
+    text-align: center
+    
+}
+.signup-button{
+    text-align: center
+}
+.avatar{
+    margin-bottom: 2rem
+}
+#input1{
+
+    border-top: 1px solid black;
+}
+.content1{
+    width: 70%;
+    margin: 0 auto
+}
+.khungnhap{
+    width: 50%;
+    align-items: center
+}
+.quayve{
+    position: absolute;
+    top:10px;
+    right:20px;
+    font-size: 60px;
+    text-decoration: none
+}
+@media(max-width:1167px){
+    .quayve{
+        color: red;
+        font-size: 50px
+    }
+}
+.intro > a{
+    color: white
+}

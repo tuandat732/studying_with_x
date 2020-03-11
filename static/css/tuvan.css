@@ -1,0 +1,80 @@
+.khungchon{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(242, 241, 239, 1)
+}
+form{
+    margin-top: 2rem;
+    height: 20rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center
+}
+select{
+    height: 1.5rem;
+    border-radius: 2rem;
+    width: 15rem
+}
+input{
+    border: 0.4px solid gray;
+    padding-left: 10px;
+    width: 14.5rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+}
+button{
+    width: 4rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgba(236, 100, 75, 1);
+    height: 1.5rem
+}
+button:hover{
+    transition: 0.5s;
+    width: 4.5rem;
+    color: white
+}
+/* .truongdo{
+    padding: 2rem;
+} */
+.truong{
+    background-color: white;
+    box-shadow: 0 0 36px #dee2e5;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+.chuy{
+    display: inline;
+    box-sizing: border-box
+}
+.chuy p {
+    font-size: 20px
+}
+.cotx2{
+    display: flex;
+    flex-wrap: wrap
+}
+.truong1{
+    background-color: white;
+    box-shadow: 0 0 36px #dee2e5;
+    width: 90%;
+    padding: 2rem;
+    margin-top:1rem;
+    /* height: 150px */
+}
+.cot1{
+    flex: 1 0 40%;
+    width: 100%;
+    margin: 3rem;
+    /* text-align: center */
+}
+.cot1 h2{
+    height: 3rem;
+    margin-bottom: 30px
+    /* margin-left: 1rem; */
+    /* text-align: center */
+}
+.truongdo1{
+    padding: 2rem
+}
